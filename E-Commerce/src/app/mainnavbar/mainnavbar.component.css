@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    height: 100vh;
+}
+ul{
+     display:flex;
+     position:absolute;
+     justify-content:center;
+      margin-left:760px;
+      margin-top:8px;
+}
+ul li{
+    list-style-type: none;
+    
+}
+ul li a{
+    text-decoration: none;
+    margin-right:70px;
+    color:black;
+    font-size: 18px;
+}
+.menubar{
+    background-color: #fff;
+    display: flex;
+    padding:10px 5px;
+    
+}
+.serch{
+    margin-left:300px;
+    padding-top:5px;
+    position:relative;
+    display: flex;
+}
+.search-icon {
+    padding: 5px;
+    color: #999;
+    position:absolute;
+    margin-left:-110px;
+    margin-top:1px;
+    font-size:20px;
+    font-weight:600px;
+
+  }
+.serch input{
+    width:500px;
+    height:38px;
+    border-radius: 6px;
+    border: rgba(92, 136, 197, 0.866);
+    background-color: rgba(145, 217, 222, 0.291);
+    font-size: 17px;
+    color: black;
+    padding:10px;
+    margin-left:-110px;
+    outline: none;
+    gap: 5rem;
+    flex: 1;
+}
+.serch input:hover{
+    border:none;
+    outline: none;
+}
+.serch input::placeholder{
+    padding-left:22px;
+}
+.hd b{
+    color:#2a55e5;
+    font-weight: bold;
+    font-size:21px;
+    position: absolute;
+    margin-left:85px;
+    font-style: italic;
+}
+.hd a{
+    position: absolute;
+    margin-top:26px;
+    margin-left:76px;
+    font-size:13px;
+    font-style:italic;
+    color: grey;
+
+}
+.hd strong{
+        color: gold;
+        position: absolute;
+        margin-top:26px;
+        margin-left:120px;
+        font-size:13px;
+        font-style: italic;
+
+}
+.menu-item{
+    position: relative;
+}
+.sub{
+    display: none;
+    width:240px;
+    height:110px;
+    position: absolute;
+    margin-left:-200px;
+    background-color: #fff;
+    padding-left:7px;
+    border: 1px solid #ccc;
+    margin-top:-1px;
+    
+}
+.menu-item:hover .sub{
+    display:block;
+}
+.sub li{
+    margin-top: 10px;
+}
+.sub li a{
+    padding:1px;
+    font-size:15px;
+}
+
+.sub{
+    border-radius:4px;
+}
+ 
