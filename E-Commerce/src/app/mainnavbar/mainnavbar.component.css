@@ -12,7 +12,7 @@ ul{
      position:absolute;
      justify-content:center;
       margin-left:760px;
-      margin-top:8px;
+      margin-top:10px;
 }
 ul li{
     list-style-type: none;
@@ -20,14 +20,14 @@ ul li{
 }
 ul li a{
     text-decoration: none;
-    margin-right:70px;
+    margin-right:76px;
     color:black;
     font-size: 18px;
 }
 .menubar{
     background-color: #fff;
     display: flex;
-    padding:10px 5px;
+    padding:10px 4px;
     
 }
 .serch{
@@ -36,16 +36,7 @@ ul li a{
     position:relative;
     display: flex;
 }
-.search-icon {
-    padding: 5px;
-    color: #999;
-    position:absolute;
-    margin-left:-110px;
-    margin-top:1px;
-    font-size:20px;
-    font-weight:600px;
-
-  }
+ 
 .serch input{
     width:500px;
     height:38px;
@@ -72,14 +63,14 @@ ul li a{
     font-weight: bold;
     font-size:21px;
     position: absolute;
-    margin-left:85px;
+    margin-left:70px;
     font-style: italic;
 }
 .hd a{
     position: absolute;
     margin-top:26px;
-    margin-left:76px;
-    font-size:13px;
+    margin-left:60px;
+    font-size:15px;
     font-style:italic;
     color: grey;
 
@@ -87,9 +78,9 @@ ul li a{
 .hd strong{
         color: gold;
         position: absolute;
-        margin-top:26px;
-        margin-left:120px;
-        font-size:13px;
+        margin-top:27px;
+        margin-left:110px;
+        font-size:14px;
         font-style: italic;
 
 }
@@ -98,28 +89,57 @@ ul li a{
 }
 .sub{
     display: none;
-    width:240px;
-    height:110px;
+    width:250px;
+    height:120px;
     position: absolute;
     margin-left:-200px;
     background-color: #fff;
     padding-left:7px;
     border: 1px solid #ccc;
-    margin-top:-1px;
-    
+    margin-top:20px;
 }
 .menu-item:hover .sub{
     display:block;
 }
 .sub li{
-    margin-top: 10px;
+    margin-top:8px;
 }
 .sub li a{
     padding:1px;
     font-size:15px;
 }
-
 .sub{
     border-radius:4px;
 }
  
+ul li img{
+    position:absolute;
+    margin-left:-22px;
+    margin-top:-3px;
+     
+}
+.sign{
+    margin-left: -14px;
+    
+}
+.sign:hover .submenu2{
+    background-color: #f7f7f7;
+    display: block;
+}
+ 
+.submenu2{
+    display: none;
+    width:210px;
+    height:240px;
+    position: absolute;
+    margin-left:-30px;
+    background-color: #fff;
+    padding-left:7px;
+    border: 1px solid #ccc;
+    margin-top:2px;
+   
+}
+.submenu2 li {
+    margin-top:7px;
+    font-size: 16px;
+}
