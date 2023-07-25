@@ -5,10 +5,13 @@ import { BecomeasellerComponent } from './mainnavbar/becomeaseller/becomeaseller
 import { SigninComponent } from './mainnavbar/signin/signin.component';
 import { CartComponent } from './mainnavbar/cart/cart.component';
 import { DotsComponent } from './mainnavbar/dots/dots.component';
+import { HomeComponent } from './mainnavbar/home/home.component';
 
 const routes: Routes = [
   {path:"",redirectTo:'navbar',pathMatch:'full'},
   {path:'navbar',component:MainnavbarComponent,children:[
+    {path:"",redirectTo:'home',pathMatch:'full'},
+    {path:'home',component:HomeComponent},
     {path:'becseller',component:BecomeasellerComponent},
     {path:'signin',component:SigninComponent},
     {path:'cart',component:CartComponent},
