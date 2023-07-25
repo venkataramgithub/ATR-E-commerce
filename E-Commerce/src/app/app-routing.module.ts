@@ -8,11 +8,11 @@ import { DotsComponent } from './mainnavbar/dots/dots.component';
 
 const routes: Routes = [
   {path:"",redirectTo:'navbar',pathMatch:'full'},
-  {path:'navbar',component:MainnavbarComponent,children:[
-    {path:'becseller',component:BecomeasellerComponent},
-    {path:'signin',component:SigninComponent},
-    {path:'cart',component:CartComponent},
-    {path:'dots',component:DotsComponent}
+  {path:'/navbar',component:MainnavbarComponent,children:[
+    {path:'/becseller',component:BecomeasellerComponent},
+    {path:'/signin',component:SigninComponent},
+    {path:'/cart',component:CartComponent},
+    {path:'/dots',component:DotsComponent}
   ]}
 ];
 
