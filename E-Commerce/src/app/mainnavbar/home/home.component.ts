@@ -14,8 +14,15 @@ export class HomeComponent {
     '../../assets/slide2.webp',
     '../../assets/slide3.webp',
     '../../assets/slide4.webp',
-    
-
+    '../../assets/slide6.webp',
+  ]
+  slideblock:any=[
+    {image:'../../assets/cam.jpg',title:'Television',price:'5000'},
+    {image:'../../assets/tv.jpg',title:'Camera',price:'2500'},
+    {image:'../../assets/project.jpeg',title:'laptop',price:'2000'},
+    {image:'../../assets/cam.jpg',title:'Dress',price:'3000'},
+    {image:'../../assets/cam.jpg',title:'Television',price:'2500'},
+    {image:'../../assets/cam.jpg',title:'Camera',price:'2000'},
   ]
   ngOnInit(){
     this.startSlide()

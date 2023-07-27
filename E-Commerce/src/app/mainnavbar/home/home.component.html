@@ -30,5 +30,16 @@
   <button type="button" class="btn2"  (click)="shownext()"><img src='../../../assets/right.jpg' height="80px"></button>
 
          </div>
+
+  <div class="slider2">
+    <h3 class="head">Best of Electronics</h3>
+    <div class="slider2-block" *ngFor="let img of slideblock">
+      <img [src]="img.image" alt="slider img">
+      <p>{{img.title}}</p>
+      <span>From ${{img.price}}</span>
+    </div>
+  </div>
+    
+   
 </body>
 </html>
