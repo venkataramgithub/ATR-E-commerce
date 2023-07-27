@@ -24,6 +24,14 @@
 .items img{
     height: 64px;
 }
+.slider{
+    margin-top:20px;
+    width: 100%;
+    display: block;
+    margin-left: 12px;
+    width: 1228px;
+    object-fit: cover;
+}
 .gr{
     position: relative;
     margin-left:30px;
@@ -60,4 +68,21 @@ label{
     padding-top: 4px;
     font-size: 15px;
     cursor: pointer;
+}
+
+.carousal-block img{
+    width: 100%;
+    height: auto;
+    opacity:1;
+}
+.btn1{
+    position: absolute;
+    margin-top:60px;
+
+}
+.btn2{
+    position: absolute;
+    margin-left:1187px;
+    margin-top:-150px;
+
 }

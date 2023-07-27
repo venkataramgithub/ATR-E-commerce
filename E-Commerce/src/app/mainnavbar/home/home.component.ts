@@ -6,5 +6,51 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  currentslide:any=0;
+  clearid:any;
+  intervalid:any;
+  imageblock:any=[
+    '../../assets/slide.webp',
+    '../../assets/slide2.webp',
+    '../../assets/slide3.webp',
+    '../../assets/slide4.webp',
+    
+
+  ]
+  ngOnInit(){
+    this.startSlide()
+}
+startSlide(){
+ this.intervalid=setInterval(()=>{
+   this.shownextslide();
+ },5000);
+
+}
+shownextslide(){
+    
+  this.currentslide=(this.currentslide+1)%this.imageblock.length;
+  console.log(this.imageblock[this.currentslide]);
+}
+showprev(){
+  if(this.currentslide>0){
+    clearInterval(this.intervalid);
+    this.currentslide=this.currentslide-1;
+    console.log(this.imageblock[this.currentslide]);
+    this.clearid=setTimeout(()=>{
+      this.startSlide();
+    },3000);
+  }
+}
+shownext(){
+  if(this.currentslide<3){
+    clearInterval(this.intervalid);
+    this.currentslide=this.currentslide+1;
+    console.log(this.imageblock[this.currentslide]);
+    this.clearid=setTimeout(()=>{
+      this.startSlide();
+    },3000);
+    }
+}
+
 
 }

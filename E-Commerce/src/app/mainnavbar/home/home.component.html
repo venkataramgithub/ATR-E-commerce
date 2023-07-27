@@ -20,12 +20,15 @@
         <div> <a routerLink="#"><img src="../../../assets/beauty.webp"><label class="bs">Beauty,Toys&More</label></a></div>
         <div> <a routerLink="#"><img src="../../../assets/bikes.webp"><label class="tws">Two wheelers</label></a></div>
     </div>
-    
          <div class="slider">
+            <button type="button" class="btn1"  (click)="showprev()"><img src="../../../assets/left.jpg" height="80px"></button>
+  <div class="carousal-container">
+    <div class="carousal-block" id="carousal">
+      <img [src]="imageblock[currentslide]" alt="image">
+    </div>
+  </div>
+  <button type="button" class="btn2"  (click)="shownext()"><img src='../../../assets/right.jpg' height="80px"></button>
 
          </div>
-       
-  
 </body>
-
 </html>
