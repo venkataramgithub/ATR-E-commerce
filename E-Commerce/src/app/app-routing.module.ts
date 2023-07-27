@@ -6,6 +6,7 @@ import { SigninComponent } from './mainnavbar/signin/signin.component';
 import { CartComponent } from './mainnavbar/cart/cart.component';
 import { DotsComponent } from './mainnavbar/dots/dots.component';
 import { HomeComponent } from './mainnavbar/home/home.component';
+import { MobilesComponent } from './mobiles/mobiles.component';
 
 const routes: Routes = [
   {path:"",redirectTo:'navbar',pathMatch:'full'},
@@ -15,8 +16,10 @@ const routes: Routes = [
     {path:'becseller',component:BecomeasellerComponent},
     {path:'signin',component:SigninComponent},
     {path:'cart',component:CartComponent},
-    {path:'dots',component:DotsComponent}
-  ]}
+    {path:'dots',component:DotsComponent},
+    {path:'mobiles',component:MobilesComponent},
+  ]},
+  
 ];
 
 @NgModule({
