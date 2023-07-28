@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.itembar {
+    background-color: #ffff;
+    color:black;
+    padding:3px;
+    display: flex;
+    justify-content: center;
+}
+
+.lit {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    padding: 0;
+}
+
+.lit li {
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.lit li:last-child {
+    margin-right: 0;
+    margin-left: 10px;
+}

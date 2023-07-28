@@ -1,0 +1,63 @@
+*{
+    margin:0px;
+    padding:0;
+}
+.main {
+    background-color: #2f00ff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .head p {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .head h4 {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .search {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 40%;
+    height: 50px;
+  }
+
+  button {
+    padding: 8px 20px;
+    background-color:white;
+    color:blue;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    width:150px;
+    
+  }
+
+  .lit ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .lit li {
+    margin: 20px;
+    font-size: 20px;
+    
+  }
+
+  .lit li:last-child {
+    margin-right: 200px;
+  }
+
+  .lit li a {
+    color: #fff;
+    text-decoration: none;
+  }
