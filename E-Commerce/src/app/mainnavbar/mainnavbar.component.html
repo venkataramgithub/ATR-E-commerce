@@ -12,8 +12,10 @@
         <div class="menubar">
             <div class="hd">
                 <b>Flipkart</b>
-                <a href="#">Explore</a>
-                <strong>Plus</strong>
+                <div class="title">
+                    <a href="#">Explore</a>
+                    <strong>Plus</strong>
+                </div>
             </div>
             <div class="serch">
                 <div class="search-icon">
@@ -23,11 +25,11 @@
             </div>
             <div class="list-items">
                 <ul>
-                    <li><img src="../../assets/Store-9eeae2.svg"><a routerLink="/navbar/becseller">Become a seller</a></li>
+                    <li><span class="material-symbols-outlined">
+                        storefront</span><a routerLink="/navbar/becseller">Become a seller</a></li>
                     <div class="sign">
-                        <li (mouseenter)="showSubMenu()" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()"><img
-                                src="../../assets/profile-815786.svg"><a routerLink="/login">SignIn</a>
-                            <ul class="submenu2" *ngIf="showSubMenu" (mouseenter)="showSubMenu()"
+                        <li (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()"><span class="material-symbols-outlined">account_circle</span><a routerLink="/login" class="arrow">SignIn<span class="material-symbols-outlined">stat_1</span></a>
+                            <div class="submenu2" *ngIf="showSubMenu" (mouseenter)="showSubMenu()"
                                 (mouseleave)="hideSubMenu()">
                                 <li><a routerLink="">New user</a>
                                 </li>
@@ -37,19 +39,19 @@
                                 <li><a routerLink="">WishList</a></li>
                                 <li><a routerLink="">Rewards</a></li>
                                 <li><a routerLink="">GiftCards</a></li>
-                            </ul>
+                            </div>
                         </li>
                     </div>
-                    <li><a routerLink="/navbar/cart">Cart</a></li>
+                    <li><span class="material-symbols-outlined"> shopping_cart </span><a routerLink="/navbar/cart">Cart</a></li>
                     <li class="menu-item"> <img src="../../assets/header_3verticalDots-ea7819.svg"
                             (mouseenter)="showSubMenu()" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()"
                             class="img">
-                        <ul class="sub" *ngIf="showSubMenu" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()">
+                        <div class="sub" *ngIf="showSubMenu" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()">
                             <li><a routerLink="">Notification Preferences</a></li>
                             <li><a routerLink="">24x7 Customer care</a></li>
                             <li><a routerLink="">Advertise</a></li>
                             <li><a routerLink="">Download App</a></li>
-                        </ul>
+                        </div>
                     </li>
                 </ul>
             </div>

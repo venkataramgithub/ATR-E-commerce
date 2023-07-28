@@ -98,7 +98,7 @@ label{
     margin:7px 12px;
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:space-between;
     overflow: hidden;
     padding:40px 10px;
 }
@@ -114,10 +114,11 @@ label{
     border:1px solid rgba(0,0,0,0.3);
     overflow: hidden;
     height:250px;
+    width:30%;
     
 }
 .slider2-block img{
-    width: 170px;
+    width:100%;
     height:180px;
     transform: scale(0.9);
     margin-bottom:5px;
