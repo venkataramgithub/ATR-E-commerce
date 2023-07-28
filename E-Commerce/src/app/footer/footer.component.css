@@ -4,18 +4,21 @@
 }
 body{
     background-color: black;
+    width: 100%;
 }
 .footer{
     display: flex;
     background-color: #040404e6;
     color: white;
     border-bottom: 1px solid;
+    width: 100%;
 
 }
 .footer1{
 
     display: flex;
     margin-left: 18%;
+    width: 100%;
 }
 .l{
 margin-left: 40px;
