@@ -10,6 +10,10 @@ import { CartComponent } from './mainnavbar/cart/cart.component';
 import { DotsComponent } from './mainnavbar/dots/dots.component';
 import { HomeComponent } from './mainnavbar/home/home.component';
 import { MobilesComponent } from './mobiles/mobiles.component';
+import { MainbarComponent } from './mainbar/mainbar.component';
+import { ItembarComponent } from './itembar/itembar.component';
+import { LoginComponent } from './login/login.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { MobilesComponent } from './mobiles/mobiles.component';
     CartComponent,
     DotsComponent,
     HomeComponent,
-    MobilesComponent
+    MobilesComponent,
+    MainbarComponent,
+    ItembarComponent,
+    LoginComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
