@@ -13,43 +13,54 @@ section{
     left:0%;
     right: 0%;
     z-index:100;
-    display:block;
 }
 .list-items{
-    margin-left:18%;
+    margin-left:5%;
+    
 }
 ul{
     display:flex;
-    position:absolute;
     justify-content:center;
     margin-top:10px;
 }
 ul li{
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     
 }
 ul li a{
     text-decoration: none;
-    margin-right:76px;
+    margin-right:35px;
+    margin-top:5px;
     color:black;
     font-size: 18px;
 }
+.arrow span{
+    position:absolute;
+}
 .menubar{
-    background-color: #62afe3;
+
+
+    background-color:white;
+ 
     display: flex;
     flex-direction: row;
     padding:10px 4px;
     width:100%;
 }
 .serch{
-    margin-left:300px;
     padding-top:5px;
-    position:relative;
     display: flex;
+    margin-left: 3%;
+    width:50%;
 }
  
 .serch input{
-    width:500px;
+    width:100%;
     height:38px;
     border-radius: 6px;
     border: rgba(92, 136, 197, 0.866);
@@ -57,7 +68,6 @@ ul li a{
     font-size: 17px;
     color: black;
     padding:10px;
-    margin-left:-110px;
     outline: none;
     gap: 5rem;
     flex: 1;
@@ -69,18 +79,18 @@ ul li a{
 .serch input::placeholder{
     padding-left:22px;
 }
+.hd{
+    margin-left: 5%;
+}
 .hd b{
     color:#2a55e5;
     font-weight: bold;
     font-size:21px;
-    position: absolute;
-    margin-left:70px;
+     
     font-style: italic;
 }
 .hd a{
-    position: absolute;
     margin-top:26px;
-    margin-left:60px;
     font-size:15px;
     font-style:italic;
     color: grey;
@@ -88,9 +98,7 @@ ul li a{
 }
 .hd strong{
         color: gold;
-        position: absolute;
         margin-top:27px;
-        margin-left:110px;
         font-size:14px;
         font-style: italic;
 
@@ -100,20 +108,21 @@ ul li a{
 }
 .sub{
     display: none;
-    width:250px;
-    height:120px;
+    width:230px;
+    height:200px;
     position: absolute;
-    margin-left:-200px;
     background-color: #fff;
-    padding-left:7px;
+    padding:20px;
     border: 1px solid #ccc;
-    margin-top:20px;
+    margin-left:-100px;
+    margin-top:230px;
 }
 .menu-item:hover .sub{
     display:block;
 }
 .sub li{
     margin-top:8px;
+    width: fit-content;
 }
 .sub li a{
     padding:1px;
@@ -123,35 +132,45 @@ ul li a{
     border-radius:4px;
 }
  
-ul li img{
-    position:absolute;
-    margin-left:-22px;
-    margin-top:-3px;
-     
+ul li span{
+     margin-right:6px;
 }
 .sign{
     margin-left: -14px;
     
 }
 .sign:hover .submenu2{
-    background-color: #f7f7f7;
+    background-color:white;
     display: block;
 }
- 
+.sign:hover .submenu2 a{
+    color: black;
+}
+.sign:hover a,.sign:hover{
+    color: blue;
+}
+.sign:hover a span{
+    transform: rotate(180deg);
+}
 .submenu2{
     display: none;
-    width:210px;
-    height:240px;
+    width:230px;
+    text-align: left;
+    height:270px;
     position: absolute;
     margin-left:-30px;
-    background-color: #fff;
+    background-color:white;
     padding-left:7px;
     border: 1px solid #ccc;
-    margin-top:2px;
+    margin-top:300px;
    
 }
 .submenu2 li {
     margin-top:7px;
     font-size: 16px;
+ 
 }
+
+
+    
 
