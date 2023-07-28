@@ -31,10 +31,12 @@ section{
 }
 .item-in{
     height:100px;
-    width:8%;
-    overflow-wrap: break-word;
+    width:9%;
     justify-content: center;
     text-align: center;
+}
+.item-in span{
+    position:absolute;
 }
 .item-in label{
     text-align: left;
