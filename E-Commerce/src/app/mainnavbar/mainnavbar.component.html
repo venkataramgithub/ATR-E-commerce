@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <section>
-    <div class="menubar">
-        <div class="hd">
-            <b>Flipkart</b>
-            <a href="#">Explore</a>
-            <strong>Plus</strong>
-        </div>
-        <div class="serch">
-            <div class="search-icon">
-                <i class="fas fa-search"></i>
+        <div class="menubar">
+            <div class="hd">
+                <b>Flipkart</b>
+                <a href="#">Explore</a>
+                <strong>Plus</strong>
             </div>
-        <input type="search"  placeholder="Search for Products,Brands and More ">
-        </div>
-        <ul>
-            <li><img src="../../assets/Store-9eeae2.svg"><a routerLink="/navbar/becseller">Become a seller</a></li>
-            <div class="sign"><li (mouseenter)="showSubMenu()" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()"><img src="../../assets/profile-815786.svg"><a routerLink="/login" >SignIn</a>
-            <ul class="submenu2" *ngIf="showSubMenu" (mouseenter)="showSubMenu()"  (mouseleave)="hideSubMenu()" >
-                   <li><a routerLink="">New user</a>
+            <div class="serch">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <input type="search" placeholder="Search for Products,Brands and More ">
+            </div>
+            <ul>
+                <li><img src="../../assets/Store-9eeae2.svg"><a routerLink="/navbar/becseller">Become a seller</a></li>
+                <div class="sign">
+                    <li (mouseenter)="showSubMenu()" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()"><img
+                            src="../../assets/profile-815786.svg"><a routerLink="/login">SignIn</a>
+                        <ul class="submenu2" *ngIf="showSubMenu" (mouseenter)="showSubMenu()"
+                            (mouseleave)="hideSubMenu()">
+                            <li><a routerLink="">New user</a>
+                            </li>
+                            <li><a routerLink="">My profile</a></li>
+                            <li><a routerLink="">Flipkart Plus Zone
+                                </a></li>
+                            <li><a routerLink="">Orders</a></li>
+                            <li><a routerLink="">WishList</a></li>
+                            <li><a routerLink="">Rewards</a></li>
+                            <li><a routerLink="">GiftCards</a></li>
+
+
+                        </ul>
                     </li>
-                   <li><a routerLink="">My profile</a></li>
-                   <li><a routerLink="">Flipkart Plus Zone
-                   </a></li>
-                   <li><a routerLink="">Orders</a></li>
-                   <li><a routerLink="">WishList</a></li>
-                   <li><a routerLink="">Rewards</a></li>
-                   <li><a routerLink="">GiftCards</a></li>
-                    
-                    
+                </div>
+                <li><a routerLink="/navbar/cart">Cart</a></li>
+                <li class="menu-item"> <img src="../../assets/header_3verticalDots-ea7819.svg"
+                        (mouseenter)="showSubMenu()" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()"
+                        class="img">
+                    <ul class="sub" *ngIf="showSubMenu" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()">
+                        <li><a routerLink="">Notification Preferences</a></li>
+                        <li><a routerLink="">24x7 Customer care</a></li>
+                        <li><a routerLink="">Advertise</a></li>
+                        <li><a routerLink="">Download App</a></li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-    </div>
-            <li><a routerLink="/navbar/cart">Cart</a></li>
-           <li class="menu-item"> <img src="../../assets/header_3verticalDots-ea7819.svg"  (mouseenter)="showSubMenu()" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()" class="img">
-                <ul class="sub" *ngIf="showSubMenu" (mouseenter)="showSubMenu()"  (mouseleave)="hideSubMenu()">
-                    <li><a routerLink="">Notification Preferences</a></li>
-                    <li><a routerLink="">24x7 Customer care</a></li>
-                    <li><a routerLink="">Advertise</a></li>
-                    <li><a routerLink="">Download App</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+        </div>
     </section>
     <router-outlet></router-outlet>
 </body>
+
 </html>
