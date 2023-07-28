@@ -7,6 +7,7 @@ import { CartComponent } from './mainnavbar/cart/cart.component';
 import { DotsComponent } from './mainnavbar/dots/dots.component';
 import { HomeComponent } from './mainnavbar/home/home.component';
 import { MobilesComponent } from './mobiles/mobiles.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path:"",redirectTo:'navbar',pathMatch:'full'},
@@ -19,6 +20,7 @@ const routes: Routes = [
     {path:'dots',component:DotsComponent},
     {path:'mobiles',component:MobilesComponent},
   ]},
+  {path:'login',component:LoginComponent}
   
 ];
 
