@@ -43,7 +43,10 @@ ul li a{
     position:absolute;
 }
 .menubar{
+
+
     background-color:white;
+ 
     display: flex;
     flex-direction: row;
     padding:10px 4px;
@@ -165,5 +168,9 @@ ul li span{
 .submenu2 li {
     margin-top:7px;
     font-size: 16px;
-    text-align: left;
+ 
 }
+
+
+    
+
