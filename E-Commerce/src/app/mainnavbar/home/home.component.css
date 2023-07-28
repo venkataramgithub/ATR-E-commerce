@@ -12,9 +12,12 @@ section{
     margin-top:70px;
 }
 .items{
-    margin-top:10px;
-    margin-right: 6px;
+    width:98%;
+    margin-top:12px;
+    margin-right:6px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     margin-left:15px;
     height:130px;
     padding:15px;
@@ -25,11 +28,18 @@ section{
     text-decoration: none;
     font-weight:700;
     color:black;
-    margin-top: 4px;
-
+}
+.item-in{
+    height:100px;
+    width:9%;
+}
+.item-in label{
+    text-align: left;
 }
 .items img{
+    padding-top:4px;
     height: 64px;
+    margin-bottom: 5px;
 }
 .slider{
     margin-top:20px;
