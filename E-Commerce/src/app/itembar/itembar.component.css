@@ -4,6 +4,7 @@
 }
 .itembar {
     background-color: #ffff;
+    width:100%;
     color:black;
     padding:3px;
     display: flex;
@@ -14,13 +15,16 @@
 .lit {
     list-style: none;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin: 10px;
     padding: 0;
+    width:100%;
 }
 
 .lit li {
-    margin-right: 50px;
-    font-size: 20px;
+    margin-right: 40px;
+    font-size:18px;
 }
 
 .lit li:last-child {
