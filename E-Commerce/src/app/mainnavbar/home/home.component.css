@@ -14,13 +14,13 @@ section{
 .items{
     width:98%;
     margin-top:12px;
-    margin-right:6px;
+    justify-content:space-evenly;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-direction:row;
     margin-left:15px;
     height:130px;
-    padding:15px;
     background-color:white;
 }
 .items a{
@@ -31,9 +31,8 @@ section{
 }
 .item-in{
     height:100px;
-    width:9%;
-    justify-content: center;
-    text-align: center;
+    width:12%;
+    text-align:center;
 }
 .item-in span{
     position:absolute;
