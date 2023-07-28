@@ -59,7 +59,8 @@ section{
   padding-left:10px;
 }
 .search span{
-  color: black;
+  color:blue;
+  font-weight:600;
   text-align: center;
 }
 button {
