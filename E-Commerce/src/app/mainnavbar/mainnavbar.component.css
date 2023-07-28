@@ -35,7 +35,7 @@ ul li a{
     font-size: 18px;
 }
 .menubar{
-    background-color: #e36262;
+    background-color: #62afe3;
     display: flex;
     flex-direction: row;
     padding:10px 4px;
@@ -154,3 +154,4 @@ ul li img{
     margin-top:7px;
     font-size: 16px;
 }
+
