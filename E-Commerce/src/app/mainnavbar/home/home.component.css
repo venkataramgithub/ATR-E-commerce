@@ -12,14 +12,13 @@ section{
     margin-top:70px;
 }
 .items{
-    width:98%;
+    width:100%;
     margin-top:12px;
-    justify-content:space-evenly;
     display: flex;
     align-items: center;
     text-align: center;
     flex-direction:row;
-    margin-left:15px;
+    justify-content:space-evenly;
     height:130px;
     background-color:white;
 }
@@ -34,12 +33,14 @@ section{
     width:12%;
     text-align:center;
 }
-.item-in span{
-    position:absolute;
-}
-.item-in label{
-    text-align: left;
+.item-in p{
+    text-align:center;
     font-size:14px;
+    width: 100%;
+}
+.item-in p span{
+    position:absolute;
+    margin-top: -2px;
 }
 .items img{
     padding-top:4px;
@@ -52,44 +53,6 @@ section{
     display: block;
     margin-left: 12px;    
 }
-.gr{
-    position: relative;
-    margin-left:30px;
-}
-.ms{
-    margin-left:36px;
-}
-.fs{
-    margin-left:26px;
-}
-.es{
-   margin-left: 25px;
-}
-.hs{
-    padding-top:3px;
-    margin-left: 14px;
-}
-.as{
-    margin-left:27px;
-}
-.ts{
-    margin-left:37px;
-}
-.os{
-    margin-left:34px;
-}
-.bs{
-    margin-left:25px;
-}
-.tws{
-    margin-left: 23px;
-}
-label{
-    padding-top: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
 .carousal-block img{
     width: 100%;
     height: auto;
