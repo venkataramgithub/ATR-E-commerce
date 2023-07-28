@@ -21,39 +21,38 @@
                 </div>
                 <input type="search" placeholder="Search for Products,Brands and More ">
             </div>
-            <ul>
-                <li><img src="../../assets/Store-9eeae2.svg"><a routerLink="/navbar/becseller">Become a seller</a></li>
-                <div class="sign">
-                    <li (mouseenter)="showSubMenu()" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()"><img
-                            src="../../assets/profile-815786.svg"><a routerLink="/login">SignIn</a>
-                        <ul class="submenu2" *ngIf="showSubMenu" (mouseenter)="showSubMenu()"
-                            (mouseleave)="hideSubMenu()">
-                            <li><a routerLink="">New user</a>
-                            </li>
-                            <li><a routerLink="">My profile</a></li>
-                            <li><a routerLink="">Flipkart Plus Zone
-                                </a></li>
-                            <li><a routerLink="">Orders</a></li>
-                            <li><a routerLink="">WishList</a></li>
-                            <li><a routerLink="">Rewards</a></li>
-                            <li><a routerLink="">GiftCards</a></li>
-
-
+            <div class="list-items">
+                <ul>
+                    <li><img src="../../assets/Store-9eeae2.svg"><a routerLink="/navbar/becseller">Become a seller</a></li>
+                    <div class="sign">
+                        <li (mouseenter)="showSubMenu()" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()"><img
+                                src="../../assets/profile-815786.svg"><a routerLink="/login">SignIn</a>
+                            <ul class="submenu2" *ngIf="showSubMenu" (mouseenter)="showSubMenu()"
+                                (mouseleave)="hideSubMenu()">
+                                <li><a routerLink="">New user</a>
+                                </li>
+                                <li><a routerLink="">My profile</a></li>
+                                <li><a routerLink="">Flipkart Plus Zone</a></li>
+                                <li><a routerLink="">Orders</a></li>
+                                <li><a routerLink="">WishList</a></li>
+                                <li><a routerLink="">Rewards</a></li>
+                                <li><a routerLink="">GiftCards</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <li><a routerLink="/navbar/cart">Cart</a></li>
+                    <li class="menu-item"> <img src="../../assets/header_3verticalDots-ea7819.svg"
+                            (mouseenter)="showSubMenu()" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()"
+                            class="img">
+                        <ul class="sub" *ngIf="showSubMenu" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()">
+                            <li><a routerLink="">Notification Preferences</a></li>
+                            <li><a routerLink="">24x7 Customer care</a></li>
+                            <li><a routerLink="">Advertise</a></li>
+                            <li><a routerLink="">Download App</a></li>
                         </ul>
                     </li>
-                </div>
-                <li><a routerLink="/navbar/cart">Cart</a></li>
-                <li class="menu-item"> <img src="../../assets/header_3verticalDots-ea7819.svg"
-                        (mouseenter)="showSubMenu()" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()"
-                        class="img">
-                    <ul class="sub" *ngIf="showSubMenu" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()">
-                        <li><a routerLink="">Notification Preferences</a></li>
-                        <li><a routerLink="">24x7 Customer care</a></li>
-                        <li><a routerLink="">Advertise</a></li>
-                        <li><a routerLink="">Download App</a></li>
-                    </ul>
-                </li>
-            </ul>
+                </ul>
+            </div>
         </div>
     </section>
     <router-outlet></router-outlet>
