@@ -116,11 +116,55 @@ p:hover span{
 .slider2-block span{
     font-weight: bold;
 }
+.slider3{
+    width:98%;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-evenly;
+    padding:50px 10px;
+    margin:10px 10px;
+}
+.sliderblock3{
+    margin: 0px 10px;
+    background-color: white;
+    text-align: center;
+    padding:3px;
+    border:1px solid rgba(0, 0, 0, 0.388);
+    overflow: hidden;
+    height:250px;
+    width:200px;
+
+}
+.sliderblock3 img{
+    width:170px;
+    height:180px;
+    object-fit: contain;
+    transform: scale(0.9);
+}
+.sliderblock3 img:hover{
+    transform: scale(1);
+}
+.head1{
+    position: absolute;
+    margin-top:-33px;
+    font-size:23px;
+    left:3%;
+    margin-bottom: 4px;
+    
+}
+.slider3 span{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
 .head{
     position:absolute;
     margin-top:-50px;
-    padding-top: 13px;
-    font-size:25px;
+    padding-top:13px;
+    left: 3%;
+    font-size:23px;
 }
 .submenu{
     width:280px;

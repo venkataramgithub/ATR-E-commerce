@@ -32,9 +32,7 @@
               <li><a>Men's Fabric</a></li>
             </ul>
           </div></li>
-          <li><a href='/'>Men's Bottom Wear<span class="material-symbols-outlined">
-            chevron_right
-            </span></a>
+          <li><a href='/'>Men's Bottom Wear</a>
             <div class="subb1">
               <ul>
                 <li><a>More in Men's Top wear</a></li>
@@ -71,9 +69,7 @@
                 <li><a>Men's Fabric</a></li>
               </ul>
             </div></li>
-          <li><a href='/'>Women Westren <span class="material-symbols-outlined">
-            chevron_right
-            </span></a>
+          <li><a href='/'>Women Westren </a>
             <div class="subb1">
               <ul>
                 <li><a>More in Men's Top wear</a></li>
@@ -90,9 +86,7 @@
                 <li><a>Men's Fabric</a></li>
               </ul>
             </div></li>
-          <li><a href='/'>Mens Footwear <span class="material-symbols-outlined">
-            chevron_right
-            </span></a>
+          <li><a href='/'>Mens Footwear</a>
             <div class="subb1">
               <ul>
                 <li><a>More in Men's Top wear</a></li>
@@ -109,9 +103,7 @@
                 <li><a>Men's Fabric</a></li>
               </ul>
             </div></li>
-          <li><a href='/'>Women Footwear <span class="material-symbols-outlined">
-            chevron_right
-            </span></a>
+          <li><a href='/'>Women Footwear </a>
             <div class="subb1">
               <ul>
                 <li><a>More in Men's Top wear</a></li>
@@ -128,9 +120,7 @@
                 <li><a>Men's Fabric</a></li>
               </ul>
             </div></li>
-          <li><a href='/'>Watches and Accessories <span class="material-symbols-outlined">
-            chevron_right
-            </span></a>
+          <li><a href='/'>Watches and Accessories </a>
             <div class="subb1">
               <ul>
                 <li><a>More in Men's Top wear</a></li>
@@ -147,9 +137,7 @@
                 <li><a>Men's Fabric</a></li>
               </ul>
             </div></li>
-          <li><a href='/'>Bages,Suitcases & luggage <span class="material-symbols-outlined">
-            chevron_right
-            </span></a>
+          <li><a href='/'>Bages,Suitcases & luggage </a>
             <div class="subb1">
               <ul>
                 <li><a>More in Men's Top wear</a></li>
@@ -166,9 +154,7 @@
                 <li><a>Men's Fabric</a></li>
               </ul>
             </div></li>
-          <li><a href='/'>Kids <span class="material-symbols-outlined">
-            chevron_right
-            </span></a>
+          <li><a href='/'>Kids</a>
             <div class="subb1">
               <ul>
                 <li><a>More in Men's Top wear</a></li>
@@ -185,9 +171,7 @@
                 <li><a>Men's Fabric</a></li>
               </ul>
             </div></li>
-          <li><a href='/'>Essentials <span class="material-symbols-outlined">
-            chevron_right
-            </span></a>
+          <li><a href='/'>Essentials  </a>
             <div class="subb1">
               <ul>
                 <li><a>More in Men's Top wear</a></li>
@@ -204,9 +188,7 @@
                 <li><a>Men's Fabric</a></li>
               </ul>
             </div></li>
-          <li><a href='/'>Winter <span class="material-symbols-outlined">
-            chevron_right
-            </span></a>
+          <li><a href='/'>Winter </a>
             <div class="subb1">
               <ul>
                 <li><a>More in Men's Top wear</a></li>
@@ -281,7 +263,15 @@
     <div class="slider2-block" *ngFor="let img of slideblock">
       <img [src]="img.image" alt="slider img">
       <p>{{img.title}}</p>
-      <span>From ${{img.price}}</span>
+      <span>From {{img.price}}</span>
+    </div>
+  </div>
+  <div class="slider3">
+    <h3 class="head1">Beauty,Toys & More </h3>
+    <div class="sliderblock3" *ngFor="let im of sliderblock2">
+      <img [src]="im.image">
+      <p>{{im.title}}</p>
+      <span>From {{im.price}}</span>
     </div>
   </div>
 </section>

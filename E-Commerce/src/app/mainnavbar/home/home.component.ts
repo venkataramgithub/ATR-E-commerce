@@ -18,13 +18,22 @@ export class HomeComponent {
     '../../assets/slide6.webp',
   ]
   slideblock:any=[
-    {image:'../../assets/cam.jpg',title:'Television',price:'5000'},
-    {image:'../../assets/tv.jpg',title:'Camera',price:'2500'},
-    {image:'../../assets/project.jpeg',title:'laptop',price:'2000'},
-    {image:'../../assets/cam.jpg',title:'Dress',price:'3000'},
-    {image:'../../assets/cam.jpg',title:'Television',price:'2500'},
-    {image:'../../assets/cam.jpg',title:'Camera',price:'2000'},
+    {image:'../../assets/cam.jpg',title:'Television',price:'₹50000'},
+    {image:'../../assets/tv.jpg',title:'Camera',price:'₹55000'},
+    {image:'../../assets/project.jpeg',title:'laptop',price:'₹8000'},
+    {image:'../../assets/monitors.jpeg',title:'Monitors',price:'₹15000'},
+    {image:'../../assets/printer.jpeg',title:'Printer',price:'₹7500'},
+    {image:'../../assets/trimers.jpeg',title:'Trimers',price:'₹1000'},
   ]
+   sliderblock2:any=[
+      {image:'../../assets/cycle.jpeg',title:'Cycle',price:'₹5000'},
+      {image:'../../assets/treadmill.jpeg',title:'TreadMill',price:'₹80000'},
+       {image:'../../assets/remotecar.jpeg',title:'RemoteCar',price:'₹1000'},
+       {image:'../../assets/microphone.jpeg',title:'Mics',price:'₹7000'},
+       {image:'../../assets/bat.jpeg',title:'Toys',price:'₹500'},
+       {image:'../../assets/musicalkeyboard.jpeg',title:'MusicKeys',price:'₹40000'}
+      
+   ]
   ngOnInit(){
     this.startSlide()
 }
