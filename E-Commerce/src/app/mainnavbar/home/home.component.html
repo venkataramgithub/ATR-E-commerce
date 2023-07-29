@@ -260,7 +260,7 @@
 
   <div class="slider2">
     <h3 class="head">Best of Electronics</h3>
-    <div class="slider2-block" *ngFor="let img of slideblock">
+    <div class="slider2-block" *ngFor="let img of slideblock2">
       <img [src]="img.image" alt="slider img">
       <p>{{img.title}}</p>
       <span>From {{img.price}}</span>
@@ -268,13 +268,26 @@
   </div>
   <div class="slider3">
     <h3 class="head1">Beauty,Toys & More </h3>
-    <div class="sliderblock3" *ngFor="let im of sliderblock2">
+    <div class="sliderblock3" *ngFor="let im of sliderblock3">
       <img [src]="im.image">
       <p>{{im.title}}</p>
       <span>From {{im.price}}</span>
     </div>
   </div>
+  <div class="slider4">
+    <h3 class="head2">Sports Health Care & More</h3>
+    <div class="sliderblock4" *ngFor="let img3 of sliderblock4">
+      <img [src]="img3.image">
+      <p>{{img3.title}}</p>
+      <span>From {{img3.price}}</span>
+    </div>
+  </div>
+  
+
 </section>
-   
+ 
+   <footer>
+    <app-footer></app-footer>
+   </footer>
 </body>
 </html>
