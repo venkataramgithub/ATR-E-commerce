@@ -7,11 +7,19 @@ import { Component } from '@angular/core';
 })
 export class MobilesComponent {
   mobilelogos:any=[
-    {image:'../../assets/realme-logo.webp',title:'Realme'},
-    {image:'../../assets/poco-logo.webp',title:'Poco'},
-    {image:'../../assets/nothingR-logo.webp',title:'Nothing R'},
-    {image:'../../assets/gpixel-logo.webp',title:'G Pixel'},
-    {image:'../../assets/vivo-logo.webp',title:'Vivo'},
-    {image:'../../assets/redmi-logo.webp',title:'Red Mi'},
+    {image:'../../assets/logos/realme-logo.webp',title:'Realme'},
+    {image:'../../assets/logos/poco-logo.webp',title:'Poco'},
+    {image:'../../assets/logos/nothingR-logo.webp',title:'Nothing R'},
+    {image:'../../assets/logos/gpixel-logo.webp',title:'G Pixel'},
+    {image:'../../assets/logos/vivo-logo.webp',title:'Vivo'},
+    {image:'../../assets/logos/redmi-logo.webp',title:'Red Mi'},
+  ]
+  mobilecompany:any=[
+    'samsung',
+    'apple',
+    'realme',
+    'poco',
+    'infinix',
+    'vivo'
   ]
 }
