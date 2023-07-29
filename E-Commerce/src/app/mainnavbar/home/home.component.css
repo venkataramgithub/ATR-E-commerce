@@ -123,26 +123,34 @@ p:hover span{
     font-size:25px;
 }
 .submenu{
-    width:max-content;
+    width:280px;
     margin-top:14px;
     display:none;
     background-color: whitesmoke;
-    height:fit-content;
+    height:max-content;
     position:absolute;
+    left:6%;
     border: 1px solid #ccc;
-    padding:6px;
+    padding:5px;
+    text-align: left;
+    z-index: 1;
 }
 .item-in:hover .submenu{
-    display: block;
+    display:inline;
 }
- 
-
-.submenu li {
+.item-in .submenu li {
     list-style-type: none;
+    margin-top: 12px;
+    padding:7px;
 }
 .submenu li a{
-    color: #000000;
+    color: #0000007c;
 }
+.submenu li a:hover,.submenu li:hover{
+    color: #000000;
+    background-color: #ccc;
+}
+ 
 .submenu2{
     width: auto;
     display:none;
@@ -218,4 +226,28 @@ p:hover span{
 }
 .item-in:hover .submenu5{
     display: block;
+}
+/* sublist for submenu */
+.subb1{
+    width:278px;
+    height: max-content;
+    display: none;
+    position: absolute;
+    top:0%;
+    left:100%;
+    background-color: #fff;
+    border:1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.subb1 ul li{
+    list-style-type:none;
+}
+.submenu li:hover .subb1{
+    display: block;
+}
+.submenu ul span{
+    position:absolute;
+    margin-left:100px;
+    margin-top: -4px;
+    
 }
