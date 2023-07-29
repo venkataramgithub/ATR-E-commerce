@@ -10,7 +10,35 @@
     <div class="items">
       <div class="item-in"> <a routerLink="/"><img src="../../../assets/gro.webp"><p class="gr">Grocery</p></a></div>
       <div class="item-in"> <a routerLink="#"><img src="../../../assets/sur.webp"><p class="ms">Mobiles</p></a></div>
-      <div class="item-in"> <a routerLink="#"><img src="../../../assets/fas.webp"><p class="fs">Fashion<span class="material-symbols-outlined">expand_more</span></p></a></div>
+      <div class="item-in"> <a routerLink="#"><img src="../../../assets/fas.webp"><p class="fs" (mouseenter)="showmenu()" (mouseleave)="stopmenu()">Fashion<span class="material-symbols-outlined">expand_more</span></p>
+      <div class="submenu" *ngIf="show" (mouseenter)="showmenu()">
+        <div class="sub1" > 
+          <ul >
+          <li><a href='/'>Men's top wear</a></li>
+          <li><a href='/'>Men's Bottom Wear</a></li>
+          <li><a href='/'>Women Ethnic</a></li>
+          <li><a href='/'>Women Westren</a></li>
+          <li><a href='/'>Mens Footwear</a></li>
+          <li><a href='/'>Women Footwear</a></li>
+          <li><a href='/'>Watches and Accessories</a></li>
+          <li><a href='/'>Bages,Suitcases & luggage</a></li>
+          <li><a href='/'>Kids</a></li>
+          <li><a href='/'>Essentials</a></li>
+          <li><a href='/'>Winter</a></li>
+        </ul>
+      </div>
+        <div class="sub2">
+           <ul>
+          <li><a href='/'>home</a></li>
+          <li><a href='/'>home</a></li>
+          <li><a href='/'>home</a></li>
+          <li><a href='/'>home</a></li>
+          <li><a href='/'>home</a></li>
+        </ul>
+      </div>
+       
+      </div>
+      </a></div>
       <div class="item-in"> <a routerLink="#"><img src="../../../assets/lap.webp"><p class="es">Electronics<span class="material-symbols-outlined">expand_more</span></p></a></div>
       <div class="item-in"> <a routerLink="#"><img src="../../../assets/fun.webp"><p class="hs">Home&Furniture<span class="material-symbols-outlined">expand_more</span></p></a></div>
       <div class="item-in"> <a routerLink="#"><img src="../../../assets/app.webp"><p class="as">Appliances</p></a></div>

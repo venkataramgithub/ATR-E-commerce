@@ -37,6 +37,7 @@ section{
     text-align:center;
     font-size:14px;
     width: 100%;
+    margin-left:8px;
 }
 .item-in p span{
     position:absolute;
@@ -68,6 +69,13 @@ section{
     right:2.5%;
     transform: translateX(100%);
     margin-top:-150px;
+}
+p:hover {
+    color: blue;
+}
+p:hover span{
+    color:blue;
+    transform: rotate(180deg);
 
 }
 .slider2{
@@ -113,4 +121,22 @@ section{
     margin-top:-50px;
     padding-top: 13px;
     font-size:25px;
+}
+.submenu{
+    width:max-content;
+    margin-top: -20px;
+    display:flex;
+    background-color: whitesmoke;
+    height:fit-content;
+    position: absolute;
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+ 
+
+.submenu li {
+    list-style-type: none;
+}
+.submenu li a{
+    color: #000000;
 }

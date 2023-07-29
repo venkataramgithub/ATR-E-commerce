@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   currentslide:any=0;
+  show=false;
   clearid:any;
   intervalid:any;
   imageblock:any=[
@@ -57,6 +58,12 @@ shownext(){
       this.startSlide();
     },3000);
     }
+}
+showmenu(){
+  this.show=true;
+}
+stopmenu(){
+  this.show=false;
 }
 
 
