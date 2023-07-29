@@ -124,13 +124,16 @@ p:hover span{
 }
 .submenu{
     width:max-content;
-    margin-top: -20px;
-    display:flex;
+    margin-top:14px;
+    display:none;
     background-color: whitesmoke;
     height:fit-content;
-    position: absolute;
+    position:absolute;
     border: 1px solid #ccc;
-    padding: 6px;
+    padding:6px;
+}
+.item-in:hover .submenu{
+    display: block;
 }
  
 
@@ -139,4 +142,80 @@ p:hover span{
 }
 .submenu li a{
     color: #000000;
+}
+.submenu2{
+    width: auto;
+    display:none;
+    position:absolute;
+    top:35%;
+    left:30%;
+    background-color: #fff;
+    border:1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.submenu2 ul li{
+    padding:7px;
+}
+.item-in:hover .submenu2{
+    display: block;
+}
+.submenu2 ul li a:hover {
+    background-color: #f0f0f0;
+  }
+.submenu2 ul li{
+    list-style-type: none;
+}
+.submenu2 ul li a:hover{
+    color: #000000;
+}
+.submenu3{
+    width: auto;
+    display:none;
+    position:absolute;
+    top:35%;
+    left:40%;
+    background-color: #fff;
+    border:1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.submenu3 ul li {
+    list-style-type: none;
+    padding: 4px;
+}
+.item-in:hover .submenu3{
+    display: block;
+}
+.submenu4{
+    width: auto;
+    display:none;
+    position:absolute;
+    top:35%;
+    left:80%;
+    background-color: #fff;
+    border:1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.submenu4 ul li {
+    list-style-type: none;
+    padding: 4px;
+}
+.item-in:hover .submenu4{
+    display: block;
+}
+.submenu5{
+    width: auto;
+    display:none;
+    position:absolute;
+    top:35%;
+    left:90%;
+    background-color: #fff;
+    border:1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.submenu5 ul li {
+    list-style-type: none;
+    padding: 4px;
+}
+.item-in:hover .submenu5{
+    display: block;
 }

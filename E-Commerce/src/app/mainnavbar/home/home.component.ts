@@ -59,12 +59,7 @@ shownext(){
     },3000);
     }
 }
-showmenu(){
-  this.show=true;
-}
-stopmenu(){
-  this.show=false;
-}
+
 
 
 }
