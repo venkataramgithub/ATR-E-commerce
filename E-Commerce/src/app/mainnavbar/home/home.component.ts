@@ -42,6 +42,22 @@ export class HomeComponent {
       {image:'../../assets/tools.jpeg',title:'Tools',price:'₹500'},
       {image:'../../assets/cycle.jpeg',title:'Cycle',price:'₹5000'},
    ]
+   sliderblock5:any=[
+    {image:'../../assets/lights.jpeg',title:'Lights',price:'Upto 80% Off'},
+    {image:'../../assets/bed.jpeg',title:'Bed covers',price:'₹500'},
+    {image:'../../assets/sopaa.jpeg',title:'Sopa',price:'₹5000'},
+    {image:'../../assets/battery.jpeg',title:'batteries',price:'₹20'},
+    {image:'../../assets/nets.jpeg',title:'Nets',price:'₹700'},
+    {image:'../../assets/plants.jpeg',title:'Plants',price:'₹50'}
+   ]
+   sliderblock6:any=[
+    {image:'../../assets/fiction.jpeg',title:'Books',price:'Upto 80% Off'},
+    {image:'../../assets/clean.jpeg',title:'Cleaning Essentials',price:'₹500'},
+    {image:'../../assets/helment.jpeg',title:'Helment',price:'₹800'},
+    {image:'../../assets/station.jpg',title:'Store',price:'₹200'},
+    {image:'../../assets/yres.jpg',title:'Tyres',price:'₹1700'},
+    {image:'../../assets/carwaher.jpeg',title:'Kits',price:'Upto 50% Off'}
+   ]
   ngOnInit(){
     this.startSlide()
 }

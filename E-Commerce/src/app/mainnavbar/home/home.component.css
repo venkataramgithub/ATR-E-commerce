@@ -143,6 +143,7 @@ p:hover span{
     height:180px;
     object-fit: contain;
     transform: scale(0.9);
+    background-color: white;
 }
 .sliderblock3 img:hover{
     transform: scale(1);

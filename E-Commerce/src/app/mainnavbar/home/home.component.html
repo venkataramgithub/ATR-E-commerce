@@ -282,10 +282,23 @@
       <span>From {{img3.price}}</span>
     </div>
   </div>
-  
-
+  <div class="slider3">
+    <h3 class="head1">Home & Kitchen Essentials </h3>
+    <div class="sliderblock3" *ngFor="let im of sliderblock5">
+      <img [src]="im.image">
+      <p>{{im.title}}</p>
+      <span>From {{im.price}}</span>
+    </div>
+  </div>
+  <div class="slider3">
+    <h3 class="head1">Grooming,Books,Auto&More  </h3>
+    <div class="sliderblock3" *ngFor="let im of sliderblock6">
+      <img [src]="im.image">
+      <p>{{im.title}}</p>
+      <span>From {{im.price}}</span>
+    </div>
+  </div>
 </section>
- 
    <footer>
     <app-footer></app-footer>
    </footer>
