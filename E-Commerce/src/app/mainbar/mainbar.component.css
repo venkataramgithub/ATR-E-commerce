@@ -60,7 +60,7 @@ section{
 }
 .search span{
   color:blue;
-  font-weight:600;
+  font-weight:900;
   text-align: center;
 }
 button {
@@ -72,7 +72,6 @@ button {
   margin-left:6%;
   font-size:18px;  
 }
-
 .lit ul {
   list-style: none;
   display: flex;
