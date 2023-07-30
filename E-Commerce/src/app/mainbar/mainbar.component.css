@@ -72,6 +72,7 @@ button {
   margin-left:1%;
   font-size:18px;  
 }
+
 .lit ul {
   list-style: none;
   display: flex;
@@ -94,3 +95,36 @@ button {
     color: #fff;
     text-decoration: none;
   }
+  .lit ul li a:hover{
+    background-color: blue;
+  }
+.lit ul li ul{
+    margin-top: 3%;
+    position: absolute;
+    display: none;
+    
+    background-color: white;
+} 
+.lit ul li:hover ul{
+    display: block;
+}
+.lit ul li ul li{
+    line-height: 3%;
+    width: 100%;
+    padding: 5px;
+    color: rgb(10, 10, 10);
+    
+}
+
+.lit ul li ul li span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -9px;
+    color: blue;
+}
+.lit ul li ul li span:hover{
+    transform: rotate(180deg);
+}
+
+
