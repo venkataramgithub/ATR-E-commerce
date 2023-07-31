@@ -173,6 +173,7 @@ p:hover span{
     height: 180px;
     object-fit: contain;
     transform: scale(0.9);
+    background-color: #fff;
 }
 .sliderblock4 img:hover{
     transform: scale(1);
@@ -208,58 +209,113 @@ p:hover span{
     font-size:20px;
 }
 .submenu{
-    width:280px;
-    margin-top:14px;
+    width:260px;
     display:none;
     background-color: whitesmoke;
     height:max-content;
     position:absolute;
     left:6%;
     border: 1px solid #ccc;
-    padding:5px;
+    padding:1px;
     text-align: left;
     z-index: 1;
 }
 .item-in:hover .submenu{
-    display:inline;
+    display:block;
 }
 .item-in .submenu li {
     list-style-type: none;
-    margin-top: 12px;
     padding:7px;
+    font-size: 14px;
 }
+.submenu li:first-child{
+    background-color: #ccc;
+
+}
+.submenu li:first-child > a {
+    color: black;
+  }
+ 
+ 
 .submenu li a{
     color: #0000007c;
 }
-.submenu li a:hover,.submenu li:hover{
-    color: #000000;
+.submenu li:hover{
     background-color: #ccc;
 }
- 
-.submenu2{
-    width: auto;
-    display:none;
-    position:absolute;
-    top:35%;
-    left:30%;
+.submenu li:hover >a{
+    color: #000000;
+}
+/* sublist for submenu */
+.subb1{
+    width:260px;
+    height: fit-content;
+    display: none;
+    position: absolute;
+    top:0%;
+    left:100%;
     background-color: #fff;
     border:1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.subb1 ul li{
+    list-style-type:none;
+}
+.submenu li:hover .subb1{
+    display: block;
+}
+ 
+.submenu2{
+    width: 230px;
+    display:none;
+    position:absolute;
+    top:35%;
+    left:16%;
+    text-align:left;
+    background-color: #fff;
+    border:1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 6px;
+}
 .submenu2 ul li{
-    padding:7px;
+    padding:10px 4px;
+    padding-right:25px;
+    font-size: 14px;
+}
+.submenu2 li:first-child{
+    background-color: #0000004d;
+}
+.submenu2 li:first-child > a{
+    color: #000000;
+}
+.submenu2 li a{
+    color: #000000c6;
 }
 .item-in:hover .submenu2{
     display: block;
 }
-.submenu2 ul li a:hover {
-    background-color: #f0f0f0;
+
+.submenu2 ul li:hover > a {
+    color: #000000;
   }
 .submenu2 ul li{
     list-style-type: none;
 }
-.submenu2 ul li a:hover{
-    color: #000000;
+.submenu2 ul li:hover{
+    background-color: #0000004d;
+}
+.subb2{
+    width: 255px;
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    top:0;
+    left: 100%;
+    border: 1px solid  rgb(236, 236, 236);
+}
+.submenu2 li:hover .subb2{
+    display: block;
 }
 .submenu3{
     width: auto;
@@ -312,24 +368,7 @@ p:hover span{
 .item-in:hover .submenu5{
     display: block;
 }
-/* sublist for submenu */
-.subb1{
-    width:278px;
-    height: max-content;
-    display: none;
-    position: absolute;
-    top:0%;
-    left:100%;
-    background-color: #fff;
-    border:1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.subb1 ul li{
-    list-style-type:none;
-}
-.submenu li:hover .subb1{
-    display: block;
-}
+
 .submenu ul span{
     position:absolute;
     margin-left:100px;
