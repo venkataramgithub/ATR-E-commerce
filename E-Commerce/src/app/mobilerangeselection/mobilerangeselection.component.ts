@@ -25,14 +25,23 @@ import { trigger,transition,state,style,animate } from '@angular/animations';
 export class MobilerangeselectionComponent {
   isopen:any=false;
   israting:any=false;
+  isdiscount:any=false;
+  iscores:any=false;
+  isclock:any=false;
   isram:any=false;
   isbattery:any=false;
   isinternal:any=false;
   isscreen:any=false;
   isprimary:any=false;
   isspeciality:any=false;
+  isresolution:any=false;
   issecondary:any=false;
   isprocess:any=false;
+  isoperation:any=false;
+  isnetwork:any=false;
+  issim:any=false;
+  isfeatures:any=false;
+  isothers:any=false;
   mobilecompany:any=[
     'samsung',
     'apple',
@@ -226,7 +235,7 @@ export class MobilerangeselectionComponent {
     this.isinternal=!this.isinternal;
   }
   isbatterycapacity(){
-    this.isbattery=!this.isbatterycapacity;
+    this.isbattery=!this.isbattery;
   }
   isscreensize(){
     this.isscreen=!this.isscreen;
@@ -242,6 +251,34 @@ export class MobilerangeselectionComponent {
   }
   specialityfunction(){
     this.isspeciality=!this.isspeciality;
+  }
+  isresolutiontype(){
+    this.isresolution=!this.isresolution;
+  }
+  isoperationsystem(){
+    this.isoperation=!this.isoperation;
+  }
+  isnetworktype(){
+    this.isnetwork=!this.isnetwork;
+  }
+  issimtype(){
+    this.issim=!this.issim;
+    console.log("working");
+  }
+  othersfunction(){
+    this.isothers=!this.isothers;
+  }
+  featuresfunction(){
+    this.isfeatures=!this.isfeatures;
+  }
+  cores(){
+    this.iscores=!this.iscores;
+  }
+  discountfunction(){
+    this.isdiscount=!this.isdiscount;
+  }
+  isclockspeed(){
+    this.isclock=!this.isclock;
   }
 }
 

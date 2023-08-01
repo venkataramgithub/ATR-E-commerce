@@ -21,12 +21,12 @@ const routes: Routes = [
     {path:'signin',component:SigninComponent},
     {path:'cart',component:CartComponent},
     {path:'dots',component:DotsComponent},
-    {path:'mobiles',component:MobilesComponent},
   ]},
   {path:'login',component:LoginComponent},
   {path:'footer',component:FooterComponent},
   {path:'itembar',component:ItembarComponent},
-  {path:'mainbar',component:MainbarComponent}
+  {path:'mainbar',component:MainbarComponent},
+  {path:'mobiles',component:MobilesComponent},
   
   
 ];

@@ -15,4 +15,11 @@ export class MobilesComponent {
     {image:'../../assets/logos/redmi-logo.webp',title:'Red Mi'},
   ]
 
+  mobilesidebar:any=[
+    '../../assets/slide.webp',
+    '../../assets/slide2.webp',
+    '../../assets/slide3.webp',
+    '../../assets/slide4.webp',
+    '../../assets/slide6.webp'
+  ]
 }

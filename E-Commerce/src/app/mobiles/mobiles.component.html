@@ -1,3 +1,4 @@
+<app-mainbar></app-mainbar>
 <section>
     <div class="content-title">
         <h3>Mobile Phones</h3>
@@ -17,9 +18,12 @@
                     <p>{{image.title}}</p>
                 </div>
             </div>
-        </div>
-        <div class="">
-
+            <div class="mobilepack">
+                <div class="mobilepack-block" *ngFor="let image of mobilesidebar">
+                    <img [src]="image" alt="mobileimg">
+                </div>
+            </div>
         </div>
     </div>
 </section>
+<app-footer></app-footer>

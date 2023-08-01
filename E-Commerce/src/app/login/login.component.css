@@ -6,7 +6,7 @@ body{
     background-color: whitesmoke;
 }
 .middle{
-    display: flex;
+    display:flex;
     padding-left: 300px;
     padding-right: 300px;
     padding-top: 50px;
@@ -34,7 +34,6 @@ body{
     }
     form .text{
         position: relative;
-        border-bottom: 2px solid blue;
         margin: 30px 0px 30px;
     }
 .text input{

@@ -95,8 +95,8 @@ button {
     text-decoration: none;
   }
 .lit ul li ul{
-  margin-left: -105px;
-  margin-top:30px;
+  margin-left: -100px;
+  margin-top:25px;
   clip-path:polygon(0% 5%,45% 5%,50% 0%,55% 5%,100% 5%,100% 100%,0% 100%);
   position: absolute;
   display: none;

@@ -29,7 +29,7 @@
             <div class="arrow" (click)="brandfunction()">
                 <p>Brand</p><span class="material-symbols-outlined">expand_more</span>
             </div>
-            <div class="list" [@openclose]="isopen ? 'open' : 'close'">
+            <div class="list" [@openclose]="isopen ? 'close' : 'open'">
                 <input type="search" placeholder="Search Brand">
                 <div class="list-items">
                     <div class="form-group" *ngFor="let company of mobilecompany">
@@ -42,7 +42,7 @@
             <div class="arrow" (click)="customerratings()">
                 <p>CUSTOMER RATINGS</p><span class="material-symbols-outlined">expand_more</span>
             </div>
-            <div class="list" [@openclose]="israting? 'open':'close'">
+            <div class="list" [@openclose]="israting? 'close':'open'">
                 <div class="form-group">
                     <input type="checkbox" id="4star" name="4star"><label for="4star">4* & above</label>
                 </div>
@@ -64,7 +64,7 @@
                 <p>RAM</p><span class="material-symbols-outlined">expand_more</span>
             </div>
             <div class="list">
-                <div class="list-items" [@openclose]="isram? 'open':'close'">
+                <div class="list-items" [@openclose]="isram? 'close':'open'">
                     <div class="form-group" *ngFor="let company of ram">
                         <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
                     </div>
@@ -156,10 +156,10 @@
             </div>
         </div>
         <div class="brand">
-            <div class="arrow" (click)="resolutiontype()">
+            <div class="arrow" (click)="isresolutiontype()">
                 <p>RESOLUTION TYPE</p><span class="material-symbols-outlined">expand_more</span>
             </div>
-            <div class="list">
+            <div class="list" [@openclose]="isresolution?'open':'close'">
                 <div class="list-items">
                     <div class="form-group" *ngFor="let company of resolutiontype">
                         <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
@@ -168,10 +168,10 @@
             </div>
         </div>
         <div class="brand">
-            <div class="arrow" (click)="operationsystem()">
+            <div class="arrow" (click)="isoperationsystem()">
                 <p>OPERATING SYSTEM</p><span class="material-symbols-outlined">expand_more</span>
             </div>
-            <div class="list">
+            <div class="list" [@openclose]="isoperation? 'open':'close'">
                 <div class="list-items">
                     <div class="form-group" *ngFor="let company of operationsystem">
                         <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
@@ -180,10 +180,10 @@
             </div>
         </div>
         <div class="brand">
-            <div class="arrow" (click)="networktype()">
+            <div class="arrow" (click)="isnetworktype()">
                 <p>NETWORK TYPE</p><span class="material-symbols-outlined">expand_more</span>
             </div>
-            <div class="list">
+            <div class="list" [@openclose]="isnetwork?'open':'close'">
                 <div class="list-items">
                     <div class="form-group" *ngFor="let company of networktype">
                         <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
@@ -192,10 +192,10 @@
             </div>
         </div>
         <div class="brand">
-            <div class="arrow" (click)="simtype">
+            <div class="arrow" (click)="issimtype()">
                 <p>SIM TYPE</p><span class="material-symbols-outlined">expand_more</span>
             </div>
-            <div class="list">
+            <div class="list" [@openclose]="issim?'open':'close'">
                 <div class="list-items">
                     <div class="form-group" *ngFor="let company of simtype">
                         <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
@@ -204,10 +204,10 @@
             </div>
         </div>
         <div class="brand">
-            <div class="arrow" (click)="others()">
+            <div class="arrow" (click)="othersfunction()">
                 <p>OTHERS</p><span class="material-symbols-outlined">expand_more</span>
             </div>
-            <div class="list">
+            <div class="list" [@openclose]="isothers? 'open':'close'">
                 <div class="list-items">
                     <div class="form-group" *ngFor="let company of others">
                         <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
@@ -216,10 +216,10 @@
             </div>
         </div>
         <div class="brand">
-            <div class="arrow" (click)="features()">
+            <div class="arrow" (click)="featuresfunction()">
                 <p>FEATURES</p><span class="material-symbols-outlined">expand_more</span>
             </div>
-            <div class="list">
+            <div class="list" [@openclose]="isfeatures?'open':'close'">
                 <div class="list-items">
                     <div class="form-group" *ngFor="let company of features">
                         <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
@@ -228,10 +228,10 @@
             </div>
         </div>
         <div class="brand">
-            <div class="arrow" (click)="numberofcores()">
+            <div class="arrow" (click)="cores()">
                 <p>NUMBER OF CORES</p><span class="material-symbols-outlined">expand_more</span>
             </div>
-            <div class="list">
+            <div class="list" [@openclose]="iscores?'open':'close'">
                 <div class="list-items">
                     <div class="form-group" *ngFor="let company of numberofcores">
                         <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
@@ -240,10 +240,10 @@
             </div>
         </div>
         <div class="brand">
-            <div class="arrow" (click)="discount()">
+            <div class="arrow" (click)="discountfunction()">
                 <p>DISCOUNT</p><span class="material-symbols-outlined">expand_more</span>
             </div>
-            <div class="list">
+            <div class="list" [@openclose]="isdiscount?'close':'open'">
                 <div class="list-items">
                     <div class="form-group" *ngFor="let company of discount">
                         <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
@@ -252,10 +252,10 @@
             </div>
         </div>
         <div class="brand">
-            <div class="arrow" (click)="clockspeed()">
+            <div class="arrow" (click)="isclockspeed()">
                 <p>CLOCK SPEED</p><span class="material-symbols-outlined">expand_more</span>
             </div>
-            <div class="list">
+            <div class="list" [@openclose]="isclock?'open':'close'">
                 <div class="list-items">
                     <div class="form-group" *ngFor="let company of clockspeed">
                         <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
