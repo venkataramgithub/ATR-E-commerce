@@ -277,7 +277,7 @@ p:hover span{
     background-color: #fff;
     border:1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    z-index: 100;
     border-radius: 6px;
 }
 .submenu2 ul li{
@@ -287,12 +287,7 @@ p:hover span{
     font-size: 14px;
     border-radius: 8px;
 }
-.submenu2 li:first-child{
-    background-color: #0000004d;
-}
-.submenu2 li:first-child > a{
-    color: #000000;
-}
+ 
 .submenu2 li a{
     color: #000000c6;
 }
@@ -369,7 +364,6 @@ p:hover span{
     padding:3px;
     box-shadow: 0 8px 8px 1px rgba(0,0,0,.3);
     border-radius: 8px;
-
 }
 .submenu4{
     width:260px;
@@ -409,7 +403,7 @@ p:hover span{
 
 }
 .submenu4 li a{
-    color: #0000007c;
+    color: #333;
 }
 .submenu4 li:hover{
     background-color: #0000004d;
@@ -440,7 +434,7 @@ p:hover span{
     border-radius: 8px;
 }
 .submenu5 li a{
-    color: #0000007c;
+    color: #333;
 }
 .submenu5 li:hover >a{
     color: #000000;
