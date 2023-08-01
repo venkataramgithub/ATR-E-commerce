@@ -289,7 +289,7 @@ p:hover span{
 }
  
 .submenu2 li a{
-    color: #000000c6;
+    color: #333;
 }
 .item-in:hover .submenu2{
     display: block;
@@ -339,7 +339,7 @@ p:hover span{
     border-radius: 8px;
 }
 .submenu3 li a{
-    color:#0000007c;
+    color:#333;
 }
 .submenu3 ul li:hover{
     background-color: #0000004d;
