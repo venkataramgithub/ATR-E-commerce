@@ -18,16 +18,16 @@ body{
 
     display: flex;
     flex-direction: row;
-    margin-left: 18%;
+    margin-left: 10%;
     width: 100%;
 }
 .l{
-margin-left: 70px;
+margin-left: 90px;
 margin-bottom: 30px;
 }
 p{
-    margin-top: 10px;
-    color: darkgrey;
+    margin-top: 40px;
+    color: #a9a9a9;
     font-size: 11px;
     width: 100%;
     max-width: max-content;
@@ -47,12 +47,22 @@ p{
     border-bottom: 1px solid;
 }
 .l3{
-    margin-left: 100px;
+    margin-left: 50px;
     line-height: 20px;
 }
+.footer1 .b p{
+    border-left: 1px solid;
+    height:140px;
+}
+.l2{
+    margin-left: 19px;
+}
 .l2 .ad{
-    line-height: 25px;
-    font-size: 14px;
+    line-height: 15px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
 }
 .ad2 a{
     color: blue;
