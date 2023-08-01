@@ -1,0 +1,267 @@
+<div class="mobile-filter">
+    <h2>Filters</h2>
+    <div class="category">
+        <h4>CATEGORIES</h4>
+        <p><span class="material-symbols-outlined">chevron_left</span>Mobiles & Accessories</p>
+        <h5>Mobiles</h5>
+    </div>
+    <div class="range">
+        <p>PRICE</p>
+        <input type="range" value="30000" name="pricerange">
+        <div class="select">
+            <select>
+                <option>Min</option>
+                <option>$10000</option>
+                <option>$15000</option>
+                <option>$20000</option>
+                <option>$30000</option>
+            </select>
+            <p>to</p>
+            <select>
+                <option>$30000+</option>
+                <option>$10000</option>
+                <option>$15000</option>
+                <option>$20000</option>
+                <option>$30000</option>
+            </select>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="brandfunction()">
+                <p>Brand</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list" [@openclose]="isopen ? 'open' : 'close'">
+                <input type="search" placeholder="Search Brand">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of mobilecompany">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company | uppercase}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="customerratings()">
+                <p>CUSTOMER RATINGS</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list" [@openclose]="israting? 'open':'close'">
+                <div class="form-group">
+                    <input type="checkbox" id="4star" name="4star"><label for="4star">4* & above</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="5star" name="5star"><label for="4star">5* & above</label> 
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow">
+                <p>GST INVOICE AVAILABLE</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="gst" name="gst"><label for="gst">GST Invoice Available</label>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="ramcategories()">
+                <p>RAM</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list">
+                <div class="list-items" [@openclose]="isram? 'open':'close'">
+                    <div class="form-group" *ngFor="let company of ram">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="isinternalstorage()">
+                <p>INTERNAL STORAGE</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list" [@openclose]="isinternal? 'open':'close'">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of internalstorage">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="isbatterycapacity()">
+                <p>BATTERY CAPACITY</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list" [@openclose]="isbattery?'open':'close'">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of batterycapacity">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="isscreensize()">
+                <p>SCREEN SIZE</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list" [@openclose]="isscreen?'open':'close'">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of screensize">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="isprimarycamera()">
+                <p>PRIMARY CAMERA</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list" [@openclose]="isprimary? 'open':'close'">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of primarycamera">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="issecondarycamera()">
+                <p>SECONDARY CAMERA</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list" [@openclose]="issecondary?'open':'close'">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of secondarycamera">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="isprocessorbrand()">
+                <p>PROCESSOR BRAND</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list" [@openclose]="isprocess?'open':'close'">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of processorbrand">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="specialityfunction()">
+                <p>SPECIALITY</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list" [@openclose]="isspeciality?'open':'close'">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of speciality">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="resolutiontype()">
+                <p>RESOLUTION TYPE</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of resolutiontype">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="operationsystem()">
+                <p>OPERATING SYSTEM</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of operationsystem">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="networktype()">
+                <p>NETWORK TYPE</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of networktype">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="simtype">
+                <p>SIM TYPE</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of simtype">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="others()">
+                <p>OTHERS</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of others">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="features()">
+                <p>FEATURES</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of features">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="numberofcores()">
+                <p>NUMBER OF CORES</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of numberofcores">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="discount()">
+                <p>DISCOUNT</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of discount">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <div class="arrow" (click)="clockspeed()">
+                <p>CLOCK SPEED</p><span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="list">
+                <div class="list-items">
+                    <div class="form-group" *ngFor="let company of clockspeed">
+                        <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

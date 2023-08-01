@@ -3,12 +3,12 @@
     padding: 0;
 }
 body{
-    background-color: black;
+    background-color:#001C30;
     width: 100%;
 }
 .footer{
     display: flex;
-    background-color: #040404e6;
+    background-color:#001C30;
     color: white;
     border-bottom: 1px solid;
     width: 100%;
