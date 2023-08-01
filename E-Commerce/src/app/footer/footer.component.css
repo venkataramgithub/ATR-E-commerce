@@ -3,12 +3,12 @@
     padding: 0;
 }
 body{
-    background-color: black;
+    background-color:#001C30;
     width: 100%;
 }
 .footer{
     display: flex;
-    background-color: #040404e6;
+    background-color:#001C30;
     color: white;
     border-bottom: 1px solid;
     width: 100%;
@@ -22,13 +22,15 @@ body{
     width: 100%;
 }
 .l{
-margin-left: 40px;
+margin-left: 70px;
 margin-bottom: 30px;
 }
 p{
-    margin-top: 20px;
+    margin-top: 10px;
     color: darkgrey;
-    font-size: 10px;
+    font-size: 11px;
+    width: 100%;
+    max-width: max-content;
     margin-bottom: 10px;
 }
 .l ul{
@@ -63,18 +65,20 @@ p{
 .fl ul{
     color: white;
     display: flex;
+    margin-left: 40px;
 }
 .fl ul li{
     width: 100%;
     max-width: fit-content;
     display: flex;
-    font-size: 10px;
+    font-size: 14px;
     flex-direction: row;
     justify-content: center;
     list-style: none;
     margin-left: 45px;
     margin-top: 35px;
     margin-bottom: 30px;
+    
 }
 .fl ul li span{
     display: flex;
@@ -82,12 +86,12 @@ p{
     justify-content: center;
     margin-top: -5px;
     margin-left: 10px;
+    
 }
 .material-symbols-outlined{
-    font-size: 18px;
-
+    font-size: 20px;
     color: yellow;
-    margin-left: 10px;
+
 }
 .fr{
     margin-top: 30px;
