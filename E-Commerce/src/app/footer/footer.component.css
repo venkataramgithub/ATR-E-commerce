@@ -3,12 +3,12 @@
     padding: 0;
 }
 body{
-    background-color: black;
+    background-color:#001C30;
     width: 100%;
 }
 .footer{
     display: flex;
-    background-color: #040404e6;
+    background-color:#001C30;
     color: white;
     border-bottom: 1px solid;
     width: 100%;
@@ -18,37 +18,51 @@ body{
 
     display: flex;
     flex-direction: row;
-    margin-left: 18%;
+    margin-left: 10%;
     width: 100%;
 }
 .l{
-margin-left: 40px;
+margin-left: 90px;
 margin-bottom: 30px;
 }
 p{
-    margin-top: 20px;
-    color: darkgrey;
+    margin-top: 40px;
+    color: #a9a9a9;
     font-size: 11px;
+    width: 100%;
+    max-width: max-content;
+    margin-bottom: 10px;
 }
 .l ul{
     width: 100%;
 }
-.l li{
+.l ul li{
     list-style: none;
     line-height: 30px;
     width: max-content;
+    font-size: 13px;
 }
 .l li:hover{
     cursor: pointer;
     border-bottom: 1px solid;
 }
 .l3{
-    margin-left: 100px;
+    margin-left: 50px;
     line-height: 20px;
 }
+.footer1 .b p{
+    border-left: 1px solid;
+    height:140px;
+}
+.l2{
+    margin-left: 19px;
+}
 .l2 .ad{
-    line-height: 25px;
-    font-size: 15px;
+    line-height: 15px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
 }
 .ad2 a{
     color: blue;
@@ -56,30 +70,38 @@ p{
 }
 .f3{
     display: flex;
+    width: 100%;
 }
 .fl ul{
     color: white;
     display: flex;
+    margin-left: 40px;
 }
 .fl ul li{
+    width: 100%;
+    max-width: fit-content;
     display: flex;
+    font-size: 14px;
     flex-direction: row;
     justify-content: center;
     list-style: none;
-    margin-left: 35px;
-    margin-top: 30px;
+    margin-left: 45px;
+    margin-top: 35px;
     margin-bottom: 30px;
+    
 }
 .fl ul li span{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: -5px;
-    margin-left: 5px;
+    margin-left: 10px;
+    
 }
 .material-symbols-outlined{
-
+    font-size: 20px;
     color: yellow;
+
 }
 .fr{
     margin-top: 30px;
@@ -90,4 +112,5 @@ img{
     height: 30px;
     width: 40px;
     margin-top: 10px;
+    margin: 3px;
 }
