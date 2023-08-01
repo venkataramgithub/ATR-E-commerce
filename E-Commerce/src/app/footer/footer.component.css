@@ -17,6 +17,7 @@ body{
 .footer1{
 
     display: flex;
+    flex-direction: row;
     margin-left: 18%;
     width: 100%;
 }
@@ -55,19 +56,39 @@ p{
 }
 .f3{
     display: flex;
+    width: 100%;
 }
 .fl ul{
     color: white;
     display: flex;
 }
 .fl ul li{
-    margin-left: 40px;
+    width: 100%;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     list-style: none;
-    margin:40px 20px 40px 60px;
+    margin-left: 45px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+.fl ul li span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.material-symbols-outlined{
+
+    color: yellow;
+    margin-left: 10px;
 }
 .fr{
     margin-top: 30px;
     margin-left: 100px;
+    margin-bottom: 20px;
 }
 img{
     height: 30px;
