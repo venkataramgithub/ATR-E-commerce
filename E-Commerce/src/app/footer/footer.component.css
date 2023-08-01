@@ -17,6 +17,7 @@ body{
 .footer1{
 
     display: flex;
+    flex-direction: row;
     margin-left: 18%;
     width: 100%;
 }
@@ -61,13 +62,29 @@ p{
     display: flex;
 }
 .fl ul li{
-    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     list-style: none;
-    margin:40px 20px 40px 60px;
+    margin-left: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.fl ul li span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+.material-symbols-outlined{
+
+    color: yellow;
 }
 .fr{
     margin-top: 30px;
     margin-left: 100px;
+    margin-bottom: 20px;
 }
 img{
     height: 30px;
