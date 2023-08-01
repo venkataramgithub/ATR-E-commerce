@@ -6,61 +6,7 @@
         <br><a>vivo T1X | OPPO Reno 8 Pro 5G | OPPO Reno 7 Pro 5G | OPPO Reno7 5G | iPhone 13 Mini | iPhone 12 | OPPO Find N2 Flip | iphone 14 | Infinix Smart 7HD | Pixel 7a | POCO F5 | Moto Edge 40</a> </p>
     </div>
     <div class="mobile-types">
-        <div class="mobile-filter">
-            <h2>Filters</h2>
-            <div class="category">
-                <h4>category</h4>
-                <p><span class="material-symbols-outlined">chevron_left</span>Mobiles & Accessories</p>
-                <h5>Mobiles</h5>
-            </div>
-            <div class="range">
-                <h2>Price</h2>
-                <input type="range" value="30000" name="pricerange">
-                <div class="select">
-                    <select>
-                        <option>Min</option>
-                        <option>$10000</option>
-                        <option>$15000</option>
-                        <option>$20000</option>
-                        <option>$30000</option>
-                    </select>
-                    <p>to</p>
-                    <select>
-                        <option>$30000+</option>
-                        <option>$10000</option>
-                        <option>$15000</option>
-                        <option>$20000</option>
-                        <option>$30000</option>
-                    </select>
-                </div>
-                <div class="brand">
-                    <div class="arrow">
-                        <p>Brand</p><span class="material-symbols-outlined">expand_more</span>
-                    </div>
-                    <div class="list">
-                        <input type="search" placeholder="Search Brand">
-                        <div class="list-items">
-                            <div class="form-group" *ngFor="let company of mobilecompany">
-                                <input type="checkbox" id={{company}} name={{company}}><label for={{company}}>{{company | uppercase}}</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="brand">
-                    <div class="arrow">
-                        <p>CUSTOMER RATINGS</p><span class="material-symbols-outlined">expand_more</span>
-                    </div>
-                    <div class="list">
-                        <div class="form-group">
-                            <input type="checkbox" id="4star" name="4star"><label for="4star">4* & above</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" id="5star" name="5star"><label for="4star">5* & above</label> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <app-mobilerangeselection></app-mobilerangeselection>
         <div class="mobiles">
             <div class="image">
                 <img src="../../assets/mobile-category.jpg">

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
- 
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainnavbarComponent } from './mainnavbar/mainnavbar.component';
@@ -14,6 +14,7 @@ import { MainbarComponent } from './mainbar/mainbar.component';
 import { ItembarComponent } from './itembar/itembar.component';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
+import { MobilerangeselectionComponent } from './mobilerangeselection/mobilerangeselection.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +29,14 @@ import { FooterComponent } from './footer/footer.component';
     MainbarComponent,
     ItembarComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    MobilerangeselectionComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
    
   ],
   providers: [],

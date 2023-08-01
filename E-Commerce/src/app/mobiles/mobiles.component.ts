@@ -14,12 +14,5 @@ export class MobilesComponent {
     {image:'../../assets/logos/vivo-logo.webp',title:'Vivo'},
     {image:'../../assets/logos/redmi-logo.webp',title:'Red Mi'},
   ]
-  mobilecompany:any=[
-    'samsung',
-    'apple',
-    'realme',
-    'poco',
-    'infinix',
-    'vivo'
-  ]
+
 }
