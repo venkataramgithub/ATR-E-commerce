@@ -14,6 +14,9 @@ import { ItembarComponent } from './itembar/itembar.component';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { MobilerangeselectionComponent } from './mobilerangeselection/mobilerangeselection.component';
+import { CartComponent } from './cart/cart.component';
+import { FlipkartComponent } from './cart/flipkart/flipkart.component';
+import { GroceryComponent } from './cart/grocery/grocery.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { MobilerangeselectionComponent } from './mobilerangeselection/mobilerang
     LoginComponent,
     FooterComponent,
     MobilerangeselectionComponent,
+    CartComponent,
+    FlipkartComponent,
+    GroceryComponent
 
   ],
   imports: [
