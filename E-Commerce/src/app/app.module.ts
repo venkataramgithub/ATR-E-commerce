@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { MainnavbarComponent } from './mainnavbar/mainnavbar.component';
 import { BecomeasellerComponent } from './mainnavbar/becomeaseller/becomeaseller.component';
 import { SigninComponent } from './mainnavbar/signin/signin.component';
-import { CartComponent } from './mainnavbar/cart/cart.component';
 import { DotsComponent } from './mainnavbar/dots/dots.component';
 import { HomeComponent } from './mainnavbar/home/home.component';
 import { MobilesComponent } from './mobiles/mobiles.component';
@@ -22,7 +21,6 @@ import { MobilerangeselectionComponent } from './mobilerangeselection/mobilerang
     MainnavbarComponent,
     BecomeasellerComponent,
     SigninComponent,
-    CartComponent,
     DotsComponent,
     HomeComponent,
     MobilesComponent,
