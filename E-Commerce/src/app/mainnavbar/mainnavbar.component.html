@@ -32,31 +32,50 @@
                                 class="arrow">SignIn<span class="material-symbols-outlined">stat_1</span></a>
                             <div class="submenu2" *ngIf="showSubMenu" (mouseenter)="showSubMenu()"
                                 (mouseleave)="hideSubMenu()">
+                                <div class="lite">
                         <li><a routerLink="">New user</a></li>
-                        <li><a routerLink="">My profile</a></li>
-                        <li><a routerLink="">Flipkart Plus Zone</a></li>
-                        <li><a routerLink="">Orders</a></li>
-                        <li><a routerLink="">WishList</a></li>
-                        <li><a routerLink="">Rewards</a></li>
-                        <li><a routerLink="">GiftCards</a></li>
+                        <li class="sp"><a>Signup?</a></li>
                     </div>
+
+                    <li><span class="material-symbols-outlined">
+                            person
+                        </span><a routerLink="">My profile</a></li>
+                    <li><span class="material-symbols-outlined">
+                            grade
+                        </span><a routerLink="">Flipkart Plus Zone</a></li>
+                    <li><span class="material-symbols-outlined">
+                            box
+                        </span><a routerLink="">Orders</a></li>
+                    <li><span class="material-symbols-outlined">
+                            favorite
+                        </span><a routerLink="">WishList</a></li>
+                    <li><span class="material-symbols-outlined">
+                            redeem
+                        </span><a routerLink="">Rewards</a></li>
+                    <li><span class="material-symbols-outlined">
+                            redeem
+                        </span>
+                        <a routerLink="">GiftCards</a>
                     </li>
             </div>
-            <li><span class="material-symbols-outlined"> shopping_cart </span><a routerLink="/navbar/cart">Cart</a></li>
-            <li class="menu-item"> <img src="../../assets/header_3verticalDots-ea7819.svg" (mouseenter)="showSubMenu()"
-                    (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()" class="img">
-                <div class="sub" *ngIf="showSubMenu" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()">
-            <li><a routerLink="">Notification Preferences</a></li>
-            <li><a routerLink="">24x7 Customer care</a></li>
-            <li><a routerLink="">Advertise</a></li>
-            <li><a routerLink="">Download App</a></li>
+            </li>
+        </div>
+        <li><span class="material-symbols-outlined"> shopping_cart </span><a routerLink="/navbar/cart">Cart</a></li>
+        <li class="menu-item"> <img src="../../assets/header_3verticalDots-ea7819.svg" (mouseenter)="showSubMenu()"
+                (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()" class="img">
+            <div class="sub" *ngIf="showSubMenu" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()">
+        <li><a routerLink="">Notification Preferences</a></li>
+        <li><a routerLink="">24x7 Customer care</a></li>
+        <li><a routerLink="">Advertise</a></li>
+        <li><a routerLink="">Download App</a></li>
         </div>
         </li>
         </ul>
         </div>
         </div>
     </section>
-    
+
     <router-outlet></router-outlet>
 </body>
+
 </html>

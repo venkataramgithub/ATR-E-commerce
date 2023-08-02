@@ -425,6 +425,7 @@ p:hover span{
     background-color: #fff;
     border:1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 .submenu5 ul li {
     list-style-type: none;
@@ -449,6 +450,5 @@ p:hover span{
 .submenu ul span{
     position:absolute;
     margin-left:100px;
-    margin-top: -4px;
-    
+    margin-top: -4px;   
 }
