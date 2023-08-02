@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
 <body>
@@ -29,12 +31,14 @@
                     <div class="sign">
                         <li (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()"><span
                                 class="material-symbols-outlined">account_circle</span><a routerLink="/login"
-                                class="arrow">SignIn<span class="material-symbols-outlined">stat_1</span></a>
+                                class="arrow">SignIn<span class="material-symbols-sharp">
+                                    expand_more
+                                </span></a>
                             <div class="submenu2" *ngIf="showSubMenu" (mouseenter)="showSubMenu()"
                                 (mouseleave)="hideSubMenu()">
                                 <div class="lite">
                         <li><a routerLink="">New user</a></li>
-                        <li class="sp"><a>Signup?</a></li>
+                        <li><a>Signup?</a></li>
                     </div>
 
                     <li><span class="material-symbols-outlined">
@@ -64,10 +68,16 @@
         <li class="menu-item"> <img src="../../assets/header_3verticalDots-ea7819.svg" (mouseenter)="showSubMenu()"
                 (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()" class="img">
             <div class="sub" *ngIf="showSubMenu" (mouseenter)="showSubMenu()" (mouseleave)="hideSubMenu()">
-        <li><a routerLink="">Notification Preferences</a></li>
-        <li><a routerLink="">24x7 Customer care</a></li>
+        <li><span class="material-symbols-sharp">
+                notifications
+            </span><a routerLink="">Notification Preferences</a></li>
+        <li><span class="material-symbols-sharp">
+                headphones
+            </span><a routerLink="">24x7 Customer care</a></li>
         <li><a routerLink="">Advertise</a></li>
-        <li><a routerLink="">Download App</a></li>
+        <li><span class="material-symbols-sharp">
+                download
+            </span><a routerLink="">Download App</a></li>
         </div>
         </li>
         </ul>
