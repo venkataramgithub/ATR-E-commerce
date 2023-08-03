@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <div class="header">
         <div class="title">
@@ -22,15 +20,14 @@
         <div class="button">
             <button type="submit" class="btn">Login</button> 
         </div>
-
     </div>
     <section class="sec">
-        <div class="main">
-            <div class="content">
-                <a routerLink="/cart/flipkart">Flipkart</a>
+        <div class="main" >
+            <div [class]="show" class="flipk">
+                <a routerLink="/cart/flipkart"(click)="action()">Flipkart</a>
             </div>
-            <div class="content2">
-             <a routerLink="/cart/grocery">Grocery</a>
+            <div class="content2" [class]="vis"> 
+             <a routerLink="/cart/grocery" (click)="hide()">Grocery</a>
             </div>
         </div>
         <div class="main2">
@@ -38,8 +35,23 @@
                 <router-outlet></router-outlet>
             </div>
         </div>
-        
+        <footer >
+            <div class="foot1">
+                <span>Polices:</span>
+                <a>Return Policy</a>
+                <a>Terms of use</a>
+                <a> Security</a>
+                <a>Privacy</a>
+                <a>Infringement</a>
+                <span>@2007-2023 Flipkart.com</span>
+            </div>
+            <div class="foot2">
+                <a>Need Help?</a>
+                <span>Visit the <a>Help Center</a> or <a>Contact Us</a></span>
+            </div>
+        </footer>
     </section>  
+
    
     
 </body>

@@ -25,6 +25,7 @@ const routes: Routes = [
   ]},
   {path:'login',component:LoginComponent},
   {path:'cart',component:CartComponent,children:[
+    {path:'',redirectTo:'flipkart',pathMatch:'full'},
     {path:'flipkart',component:FlipkartComponent},
     {path:'grocery',component:GroceryComponent},
   ]},

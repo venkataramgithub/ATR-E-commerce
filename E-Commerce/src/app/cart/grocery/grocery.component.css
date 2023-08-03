@@ -1,0 +1,37 @@
+ 
+ .button{
+    position: absolute;
+    left:50%;
+    top:75%;
+    transform: translate(-50%,-50%);
+ }
+ .img{
+    width:100%;
+    position:absolute;
+    margin-top:-155px;
+ }
+ .content{
+    padding:10px;
+ }
+ .content p{
+    font-size:20px;
+ }
+ .sp{
+    margin-left:-23px;
+ }
+ .but{
+    padding: 5px;
+ }
+ .btn{
+    padding:6px 72px;
+    border: none;
+    outline: none;
+    border-radius:4px;
+    font-size:16px;
+    color: white;
+    background:#2874f0;;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    cursor: pointer;
+     margin-left: -20px;
+    
+ }

@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent {
+  show="null";
+  vis="null";
+  action(){
+    this.vis="null";
+     this.show="content";
 
+     
+  }
+  hide(){
+   this.show='null';
+   this.vis="content";
+  }
+  
 }
