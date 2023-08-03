@@ -15,4 +15,11 @@ export class MainnavbarComponent {
   hideSubMenu() {
     this.showSubmenu = false;
   }
+  homelogin=false;
+  login(){
+    this.homelogin=true;
+  }
+  loginclose(){
+    this.homelogin=false;
+  }
 }
