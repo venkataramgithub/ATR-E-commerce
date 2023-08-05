@@ -17,6 +17,7 @@ import { MobilerangeselectionComponent } from './mobilerangeselection/mobilerang
 import { CartComponent } from './cart/cart.component';
 import { FlipkartComponent } from './cart/flipkart/flipkart.component';
 import { GroceryComponent } from './cart/grocery/grocery.component';
+import { BecomesellComponent } from './becomesell/becomesell.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { GroceryComponent } from './cart/grocery/grocery.component';
     MobilerangeselectionComponent,
     CartComponent,
     FlipkartComponent,
-    GroceryComponent
+    GroceryComponent,
+    BecomesellComponent,
 
   ],
   imports: [

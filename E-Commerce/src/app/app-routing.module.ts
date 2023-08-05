@@ -13,6 +13,7 @@ import { MainbarComponent } from './mainbar/mainbar.component';
 import { CartComponent } from './cart/cart.component';
 import { FlipkartComponent } from './cart/flipkart/flipkart.component';
 import { GroceryComponent } from './cart/grocery/grocery.component';
+import { BecomesellComponent } from './becomesell/becomesell.component';
 
 const routes: Routes = [
   {path:"",redirectTo:'navbar',pathMatch:'full'},
@@ -20,6 +21,7 @@ const routes: Routes = [
     {path:"",redirectTo:'home',pathMatch:'full'},
     {path:'home',component:HomeComponent},
     {path:'becseller',component:BecomeasellerComponent},
+    {path:'becomesell',component:BecomesellComponent},
     {path:'signin',component:SigninComponent},
     {path:'dots',component:DotsComponent},
   ]},
@@ -33,6 +35,7 @@ const routes: Routes = [
   {path:'itembar',component:ItembarComponent},
   {path:'mainbar',component:MainbarComponent},
   {path:'mobiles',component:MobilesComponent},
+  
   
   
 ];

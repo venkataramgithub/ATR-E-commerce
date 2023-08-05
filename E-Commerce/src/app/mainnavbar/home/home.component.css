@@ -452,3 +452,25 @@ p:hover span{
     margin-left:100px;
     margin-top: -4px;   
 }
+@media screen {
+    .content{
+        margin:10px;
+        width: 100%;
+    }
+    .content h2{
+        font-size: 18px;
+        margin:8px 0px 10px 0px;
+        color:rgb(40, 46, 48)
+    }
+    .content h2 p{
+        width: 100%;
+        justify-content: center;
+        margin:8px 0px 8px 0px;
+        line-height: 3px;
+        font-size: 7px;
+
+    }
+    .content h2 p:hover{
+        color:none;
+    }
+}
