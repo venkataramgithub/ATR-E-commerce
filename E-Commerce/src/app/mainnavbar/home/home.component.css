@@ -69,10 +69,10 @@ section{
     transform: translateX(100%);
     margin-top:-150px;
 }
-p:hover {
+.item-in p:hover {
     color: blue;
 }
-p:hover span{
+.item-in p:hover span{
     color:blue;
     transform: rotate(180deg);
 
