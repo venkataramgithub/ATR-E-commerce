@@ -84,24 +84,26 @@
         </div>
         </div>
     </section>
-    
+
     <router-outlet></router-outlet>
 </body>
 
 </html>
 <div class="formwrapper" *ngIf="homelogin">
-    <div class="middle" >
+    <div class="middle">
         <div class="left"></div>
-        <div class="r"><form action="">
-            <div class="text">
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                <label>Enter Email/Mobile Number</label>
-                
-            </div>
-            <p>By counting you agree to Flipkart's <a href="">Terms of Use</a>and <a href="">Privacy Policy.</a></p>
-            <button>Request  OTP</button>
-            <p class="b"><a href="">New To Flipkart?</a><a href="">Create an account</a></p>
-        </form></div>
-       </div>
-       <div class="close" (click)="loginclose()">&times;</div>  
+        <div class="r">
+            <form action="">
+                <div class="text">
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <label>Enter Email/Mobile Number</label>
+
+                </div>
+                <p>By counting you agree to Flipkart's <a href="">Terms of Use</a>and <a href="">Privacy Policy.</a></p>
+                <button>Request OTP</button>
+                <p class="b"><a href="">New To Flipkart?</a><a href="">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+    <div class="close" (click)="loginclose()">&times;</div>
 </div>

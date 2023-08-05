@@ -57,14 +57,28 @@
     width:140px;
     padding-top:5px;
 }
+ li{
+    list-style-type: none;
+ }
+
 .btn{
     padding:3px 40px;
     font-size:18px;
-    color: blue;
+    color: rgb(255, 255, 255);
     font-weight:550;
 }
+.submenu{
+    display:none;
+    position: absolute;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1000;
+}
+.button:hover .submenu{
+    display: block;
+}
 .icon{
-    z-index: 100;
+    z-index:1;
     margin-top:10px;
     margin-left:-50px;
     cursor: pointer;
@@ -81,11 +95,11 @@
     transform:translate(0%,160%);
     height:fit-content;
     margin-top:-10px;
+    position: relative;
 }
  .sec{
     background-color: #f1f3f6;
     height:100vh;
-    
  }
  .main2{
     width: 100%;

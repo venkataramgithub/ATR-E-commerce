@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="header">
         <div class="title">
@@ -16,18 +18,48 @@
         </div>
         <span class="material-symbols-sharp icon">
             search
-            </span>
+        </span>
         <div class="button">
-            <button type="submit" class="btn">Login</button> 
+            <li class="btn">Login
+            <div class="submenu">
+                <ul>
+                    <div class="lite">
+                        <li><a routerLink="">New user</a></li>
+                        <li><a style="color: blue;cursor: pointer;">Signup?</a></li>
+                    </div>
+
+                    <li><span class="material-symbols-outlined">
+                            person
+                        </span><a routerLink="">My profile</a></li>
+                    <li><span class="material-symbols-outlined">
+                            grade
+                        </span><a routerLink="">Flipkart Plus Zone</a></li>
+                    <li><span class="material-symbols-outlined">
+                            box
+                        </span><a routerLink="">Orders</a></li>
+                    <li><span class="material-symbols-outlined">
+                            favorite
+                        </span><a routerLink="">WishList</a></li>
+                    <li><span class="material-symbols-outlined">
+                            redeem
+                        </span><a routerLink="">Rewards</a></li>
+                    <li><span class="material-symbols-outlined">
+                            redeem
+                        </span>
+                        <a routerLink="">GiftCards</a>
+                    </li>
+                </ul>
+            </div>
+            </li>
         </div>
     </div>
     <section class="sec">
-        <div class="main" >
+        <div class="main">
             <div [class]="show" class="flipk">
-                <a routerLink="/cart/flipkart"(click)="action()">Flipkart</a>
+                <a routerLink="/cart/flipkart" (click)="action()">Flipkart</a>
             </div>
-            <div class="content2" [class]="vis"> 
-             <a routerLink="/cart/grocery" (click)="hide()">Grocery</a>
+            <div class="content2" [class]="vis">
+                <a routerLink="/cart/grocery" (click)="hide()">Grocery</a>
             </div>
         </div>
         <div class="main2">
@@ -35,7 +67,7 @@
                 <router-outlet></router-outlet>
             </div>
         </div>
-        <footer >
+        <footer>
             <div class="foot1">
                 <span>Polices:</span>
                 <a>Return Policy</a>
@@ -50,10 +82,10 @@
                 <span>Visit the <a>Help Center</a> or <a>Contact Us</a></span>
             </div>
         </footer>
-    </section>  
+    </section>
 
-   
-    
+
+
 </body>
 
 </html>
